@@ -1,0 +1,32 @@
+<div class="widget tag about_me">
+  <h3 class="title"><%= __('about_me') %></h3>
+  <ul class="entry">
+    <% if (theme.about_me.email) { %>
+    <li>
+      <span class="icon email"></span>
+      <a href="mailto:<%- theme.about_me.email %>" target=_blank rel=me><%- theme.about_me.email %></a>
+    </li>
+    <% } %>
+
+    <% if (theme.about_me.github) { %>
+    <li>
+      <span class="icon github"></span>
+      <a href="https://github.com/<%- theme.about_me.github %>" target=_blank rel=me>github.com/<%- theme.about_me.github %></a>
+    </li>
+    <% } %>
+
+    <% if (theme.about_me.twitter) { %>
+    <li>
+      <span class="icon twitter"></span>
+      <a href="https://twitter.com/<%- theme.about_me.twitter %>" target=_blank rel=me>@<%- theme.about_me.twitter %></a>
+    </li>
+    <% } %>
+
+    <% if (theme.about_me.gplus) { %>
+    <li>
+      <span class="icon gplus"></span>
+      <a href="https://plus.google.com/+<%- theme.about_me.gplus %>" target=_blank rel=me>+<%- theme.about_me.gplus %></a>
+    </li>
+    <% } %>
+  </ul>
+</div>

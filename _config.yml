@@ -1,6 +1,7 @@
 menu:
   Home:
   Archives: archives
+  Projects: projects
 
 widgets:
 - search
